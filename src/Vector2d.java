@@ -6,8 +6,8 @@ public class Vector2d {
         this.y = y;
     }
 
-    public Vector2d(){
-        this(0,0);
+    public Vector2d() {
+        this(0, 0);
     }
 
     public int getX() {
@@ -24,6 +24,19 @@ public class Vector2d {
 
     public void setY(int y) {
         this.y = y;
+    }
+
+    public void add(Vector2d v) {
+        x += v.getX();
+        y += v.getY();
+    }
+
+    public void addX(int x) {
+        this.x += x;
+    }
+
+    public void addY(int y) {
+        this.y += y;
     }
 
 }
